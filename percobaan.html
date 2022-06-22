@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<head>
+    <title>Chainsaw</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="percobaan.css">
+    <style>* {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Consolas';
+        background-image: linear-gradient(#eece39, #B44031,#650000,black);
+        padding: 0;
+        color: black;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        background: #eece39;
+        position: relative;
+    }
+    
+    .logo img {
+        margin-bottom: 1%;
+        padding-top: 1%;
+        width: 69%;
+        
+    }
+    
+    img.kanan {
+        float: right;
+        margin-right: 5px;
+    }
+    
+    img.tengah {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .img-responsive {
+        max-width: 100%; 
+        display:block; 
+        height: auto;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 50pt;
+        font-family: 'audiowide';
+    }
+    
+    nav ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #eece39;
+        border: 10px solid black;
+        display: inline-block;
+    }
+    
+    nav li {
+        float: left;
+    }
+    
+    nav li a {
+        color: black;
+        font-size: 40pt;
+        letter-spacing: 2.25px;
+        margin-right: 50px;
+        text-align: center;
+        position: relative;
+        font-family: 'audiowide';
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    a.tbl-merah {
+        background: #eece39;
+        padding: 15px 15px 15px 15px;
+        color: black;
+        cursor: pointer;
+    }
+    
+    a.tbl-merah:hover {
+        background: #BB4444;
+        text-decoration: none;
+        font-weight: bold;
+        border: 10px solid black;
+        color: white;
+    }
+    
+    nav li a:hover {
+        opacity: 10;
+        background-color: #eece39;
+        text-decoration: underline;
+    }
+    
+    article .Hybrid {
+        width: 65%;
+        border: 10px solid;
+        border-radius: 15px;
+        float: left;
+    }
+    
+    article .Makima {
+        width: 35%;
+        border: 10px solid;
+        border-radius: 15px;
+        float: right;
+    }
+    
+    .Makima img {
+        width: 100%;
+    }
+    
+    .Hybrid img {
+        width: 100%;
+    }
+    
+    article .Home p {
+        font-size: 100pt;
+        color: black;
+        text-align: center;
+        text-shadow: 
+        -5px 2px 10px #eece39,
+        5px 2px 10px #B44031;
+        border-bottom: 10px solid black;
+        border-left: 10px solid black;
+        width: 100%;
+        font-family: 'audiowide';
+    }
+    
+    article .Home .card {
+        width: 200px;
+        height: 250px;
+        border: 5.5px solid;
+        border-image: 
+        linear-gradient(
+            #eece39,
+            orange,
+            #B44031) 1;
+        animation: rotate
+            2.5s
+            ease-in
+            infinite;
+    }
+    
+    article .Denji img {
+        width: 30%;
+        height: 30%;
+        border: 10px solid white;
+        border-radius: 20px;
+        float: left;
+    }
+    
+    article .Denji h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 69pt;
+        border-bottom: 10px solid;
+        margin-bottom: 0px;
+        font-family: 'audiowide';
+        text-shadow: 5px 5px 0px black;
+    }
+    
+    article .Denji h2 {    
+        text-transform: capitalize;
+        color: white;
+        font-size: 45pt;
+        margin:auto;
+        text-shadow: 5px 5px 0px black;
+    }
+    
+    article ul.D {
+        list-style-type: disc;
+        font-size: 40pt;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'audiowide';
+        margin-left: 32%;
+        color: white;
+        text-shadow: 5px 5px 0px black;
+    }
+    
+    article .Denji p {
+        font-size: 40pt;
+        text-align: justify;
+        padding: 10px 10px 10px 10px;
+        width: 99%.9;
+        text-transform: capitalize;
+        word-spacing: 10px;
+        color: white;
+        text-shadow: 5px 5px 0px black;
+    
+    }
+    
+    
+    @media (min-width:320px)
+    {
+        /*smartphones, portrait iPhone, portrait 480x320 phones (Android)*/
+    }
+    @media (min-width:480px)
+    {
+        /*smartphones, Android phones, landscape iPhone*/
+    }
+    @media (min-width:600px)
+    {
+        /*portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)*/
+    }
+    @media (min-width:801px)
+    {
+        /*tablet, landscape iPad, lo-res laptops ands desktops*/
+    }
+    @media (min-width:1025px)
+    {
+        /*big landscape tablets, laptops, and desktops*/
+    }
+    @media (min-width:1281px)
+    {
+        /*hi-res laptops and desktops*/
+    
+    @keyframes rotate {
+        50%{
+            border-image:
+            linear-gradient(
+            360deg,
+            #eece39,
+            orange,
+            #B44031) 1;
+        }
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img class="tengah" class="img-responsive" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/915e3161-2693-47ba-9ed6-78134456d169/df7rvn2-60c28dc2-3b72-4168-b364-aacd7d6639b5.png/v1/fill/w_1280,h_470,strp/makima_by_egce_df7rvn2-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDcwIiwicGF0aCI6IlwvZlwvOTE1ZTMxNjEtMjY5My00N2JhLTllZDYtNzgxMzQ0NTZkMTY5XC9kZjdydm4yLTYwYzI4ZGMyLTNiNzItNDE2OC1iMzY0LWFhY2Q3ZDY2MzliNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3fyBEVpq90R3egbO_YqsdNqXqQv4XDK8-FZnQ8BxB2Q">
+                <h1 class="judul">CHAINSAW-MAN</h1>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="#Home"class="tbl-merah">Home</a></li>
+                <li><a href="#Devil"class="tbl-merah">media</a></li><li><a href="#Character" class="tbl-merah">Character</a></li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="Home">
+            <figure class="Card">
+                <figcaption>
+                    <div class="Hybrid">
+                        <img class="img-responsive"src="https://pbs.twimg.com/media/FHQJSfbXMBYpjEd?format=jpg&name=large">
+                    </div>
+                </figcaption>
+            </figure>
+                    <div class="Makima">
+                        <img class="img-responsive" src="https://comicvine.gamespot.com/a/uploads/original/11136/111364591/7785210-v36z9npf9cf41.png">
+                    </div>
+                    <p>DEVILS</p><br><br>
+                </div>
+    </article>
+    <article>
+        <div class="Character">
+            <div class="Denji">
+                <h1>Denji</h1>
+                <img src="https://i.pinimg.com/564x/05/df/a5/05dfa55425970d01ed8cfb46fb8b0bca.jpg">
+                <h2>"Apa yang tidak pernah diajarkan orang tua itu kepadamu? ¡Makanan tidak boleh percaya apa yang dikatakan Hunter!"</h2><br>
+                   <p>Denji (デンジ, Denji?) Adalah protagonis dari seri manga Chainsaw Man. Sebagai seorang anak muda, ia mewarisi hutang ayahnya dari Yakuza. Setelah bertemu Pochita, ia menjadi Pemburu Iblis untuk Yakuza dalam upaya untuk melunasi hutangnya. Setelah Yakuza, di bawah kendali Iblis, mengkhianatinya, dia meninggal dan Pochita menjadi hatinya. Dia sekarang menjadi Chainsaw devil dengan menarik tali di dadanya. Setelah bertemu Makima, dia menjadi Devil Hunter Keamanan Publik.</p><br>
+                   <ul class="D"><li>Chainsaw Devil Contract</li></ul><br>
+
+                   <p>Sebagai ganti menjalani kehidupan normal, Iblis Chainsaw menjadi jantung Denji dan mengubahnya menjadi hybrid. Semua kemampuan hybridnya berasal dari kontrak ini.</p><br>
+                   <ul class="D"><li>Blood Devil Contract</li></ul><br>
+
+                   <p>Sebagai imbalan untuk menemukan Setan Darah yang bereinkarnasi dan berteman dengan mereka, Power memberikan semua darahnya untuk menghidupkan kembali Denji.</p>
+                   
+                   <ul class="D"><li>Blood Chainsaw</li></ul><br>
+                   <p>Berkat darah yang diperoleh dari Power, Denji mampu mewujudkan chainsaw dari darahnya. Ini memiliki desain yang mirip dengan tanduk Power. Dengan menggunakan kemampuan manipulasi darahnya, Denji mampu mengganggu regenerasi Makima yang memungkinkannya untuk mengalahkannya.</p>
+
+    </article>
+</body>
+</html>
